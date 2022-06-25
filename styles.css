@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    direction: row;
+    background-color: rgba(26, 6, 6, 0.95);
+    height: 50px;
+    align-items: center;
+    border-bottom: solid 2.5px rgb(206, 22, 22)
+}
+
+header > img {
+    height: 40px;
+    width: 125px;
+}
+
+header > #nav-bar > a {
+    color: rgb(206, 22, 22);
+    margin-left: 10px;
+    font-family: impact;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header > #nav-bar > a:hover {
+    font-style: italic;
+}
+
+body {
+    position: relative;
+    top: 55px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: left;
+    color:rgb(206, 22, 22);
+    font-family: Tahoma;
+    font-size: 50px;
+    margin-left: 5%;
+}
+
+h2 {
+    font-size: 40px;
+    margin-left: 5%;
+}
+
+section {
+    color:rgb(206, 22, 22)
+}
+
+article {
+    width: 600px;
+    font-size: 1.5rem;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+video {
+    margin-left: 10%;
+}
+
+#photos {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    object-fit: cover;
+    gap: 10px;
+    justify-content: center;
+}
+
+#photos > img {
+    width: 400px;
+    height: 250px;
+    border: solid rgb(206, 22, 22) 2.5px;
+}
+
+
+@media only screen and (max-width: 720px) {
+    body {
+        display: flex;
+        direction: column;
+        gap: 50px;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    header > #nav-bar > a {
+        font-size: 20px;
+    }
+}
